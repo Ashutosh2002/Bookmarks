@@ -1,0 +1,79 @@
+body {
+    top: 0;
+    left: 0;
+    background-color: rgb(27, 25, 25);
+    height: 100vh;
+    scroll-behavior: auto;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+
+}
+
+.BookmarksDiv {
+    /* border: 3px solid blue; */
+    margin-bottom: 1rem;
+    overflow-y: auto;
+    text-align: center;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Horizontally center items */
+    max-height: 70vh;
+    width: 25vw;
+}
+
+.BookmarksDiv ul {
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.BookmarksDiv li {
+    list-style: none; /* Remove bullet points */
+    margin: 0.5rem 0; /* Add some vertical spacing */
+}
+
+.BookmarksDiv li a {
+    background-color: #af4ca0;
+    border: none;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Ensure the button spans the full width */
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.GoBackDiv button {
+     /* border: 3px solid red; */
+    padding: 1rem 3rem;
+    /* width: 4rem; */
+    /* cursor: pointer;
+    margin: auto; */ 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* For centering */
+    background-color: rgb(215, 130, 61);
+    color: whitesmoke;
+    padding: 3rem;
+    font-size: xx-large;
+    /* margin: 2rem; */
+}
+
+/* Hide scrollbar for WebKit browsers */
+.BookmarksDiv::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+}
+
+/* Hide scrollbar for other browsers */
+.BookmarksDiv {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
