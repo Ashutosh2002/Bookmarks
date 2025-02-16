@@ -7,9 +7,9 @@ const addBookmarkInputBoxUrl = document.querySelector('#AddBookmarkURL');
 
 goBackButton.addEventListener("click",function(){
     console.log("Go Back Button clicked");
-    window.location.replace(
-        "../index.html",
-      );
+    window.location.replace(window.location.origin +
+        "/index.html",
+    );
 });
 
 addBookmarkButton.addEventListener("click", function(){

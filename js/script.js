@@ -6,7 +6,7 @@ addButton.addEventListener("click", function(){
     console.log("Clicked");
 
     window.location.replace(window.location.origin +
-        "/html/addBookmarkPage.html",
+        "/Bookmarks/html/addBookmarkPage.html",
       );
 });
 
@@ -14,7 +14,7 @@ getButton.addEventListener('click',function(){
     console.log("Get Bookmarks button Clicked");
 
     window.location.replace(window.location.origin +
-        "/html/getAllBookmarksPage.html",
+        "/Bookmarks/html/getAllBookmarksPage.html",
       );
 });
 

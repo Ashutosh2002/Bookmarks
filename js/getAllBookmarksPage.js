@@ -25,8 +25,8 @@ goBackButtonGetAllBookmarksPage.addEventListener("click",function(){
     // const ulList = document.querySelector('.BookmarksDiv ul');
     // console.log(ulList);
     console.log("Go Back Button clicked");
-    window.location.replace(
-        "../index.html",
+    window.location.replace(window.location.origin +
+        "/index.html",
     );
 
 });
