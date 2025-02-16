@@ -25,9 +25,13 @@ goBackButtonGetAllBookmarksPage.addEventListener("click",function(){
     // const ulList = document.querySelector('.BookmarksDiv ul');
     // console.log(ulList);
     console.log("Go Back Button clicked");
-    window.location.replace(window.location.origin +
-        "/index.html",
-    );
+    if(window.location.protocol === "file:" || window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1"){
+        window.location.replace(window.location.origin +
+            "/index.html",
+        );
+    } else {
+        window.location.replace(window.location.origin +"/Bookmarks/index.html");
+    }
 
 });
 

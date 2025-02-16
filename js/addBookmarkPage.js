@@ -7,9 +7,14 @@ const addBookmarkInputBoxUrl = document.querySelector('#AddBookmarkURL');
 
 goBackButton.addEventListener("click",function(){
     console.log("Go Back Button clicked");
-    window.location.replace(window.location.origin +
-        "/index.html",
-    );
+    if(window.location.protocol === "file:" || window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1"){
+        window.location.replace(window.location.origin +
+            "/index.html",
+        );
+    } else {
+        window.location.replace(window.location.origin +"/Bookmarks/index.html");
+    }
+    
 });
 
 addBookmarkButton.addEventListener("click", function(){
